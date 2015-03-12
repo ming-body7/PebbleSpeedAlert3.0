@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Demo For Pebble API"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Push Notification"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/push_notification"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Push" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Message"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/messageText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="input here" />
+
+        <Button
+            android:id="@+id/send_message"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Send" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/openApp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Open My App" />
+
+    <Button
+        android:id="@+id/closeApp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Close My App" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/speedLabel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11"
+            android:text="Speed:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/speedView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/setSpeedLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Alter" />
+
+        <EditText
+            android:id="@+id/speedLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/showSpeedLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alter Speed:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
